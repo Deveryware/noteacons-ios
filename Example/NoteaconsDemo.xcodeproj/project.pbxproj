@@ -14,8 +14,8 @@
 		16341EB21C46984E00C19FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16341EB11C46984E00C19FC6 /* Assets.xcassets */; };
 		16341EB51C46984E00C19FC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16341EB31C46984E00C19FC6 /* LaunchScreen.storyboard */; };
 		164FB2BF1C48DA8C001686F1 /* CustomCallbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164FB2BE1C48DA8C001686F1 /* CustomCallbackController.m */; };
-		16C45B7D1D48A86400A7FA71 /* NoteaconsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C45B7C1D48A86400A7FA71 /* NoteaconsSDK.framework */; };
-		16C45B7F1D48A86A00A7FA71 /* NoteaconsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16C45B7C1D48A86400A7FA71 /* NoteaconsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16D4EE891D86A65500DE6238 /* NoteaconsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D4EE881D86A65500DE6238 /* NoteaconsSDK.framework */; };
+		16D4EE8B1D86A66000DE6238 /* NoteaconsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16D4EE881D86A65500DE6238 /* NoteaconsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				16C45B7F1D48A86A00A7FA71 /* NoteaconsSDK.framework in Embed Frameworks */,
+				16D4EE8B1D86A66000DE6238 /* NoteaconsSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 		16341EB61C46984E00C19FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		164FB2BD1C48DA70001686F1 /* CustomCallbackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCallbackController.h; sourceTree = "<group>"; };
 		164FB2BE1C48DA8C001686F1 /* CustomCallbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CustomCallbackController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		16C45B7C1D48A86400A7FA71 /* NoteaconsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NoteaconsSDK.framework; sourceTree = "<group>"; };
+		16D4EE881D86A65500DE6238 /* NoteaconsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NoteaconsSDK.framework; path = Carthage/Build/iOS/NoteaconsSDK.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16C45B7D1D48A86400A7FA71 /* NoteaconsSDK.framework in Frameworks */,
+				16D4EE891D86A65500DE6238 /* NoteaconsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 		16D879631C47B74A00F81574 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16C45B7C1D48A86400A7FA71 /* NoteaconsSDK.framework */,
+				16D4EE881D86A65500DE6238 /* NoteaconsSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -303,6 +303,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/NoteaconsDemo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NoteaconsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -324,6 +325,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/NoteaconsDemo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NoteaconsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
