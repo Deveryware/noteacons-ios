@@ -1,0 +1,6 @@
+framework module NoteaconsSDK {
+  umbrella header "NoteaconsSDK.h"
+
+  export *
+  module * { export * }
+}
