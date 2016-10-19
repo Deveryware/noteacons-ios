@@ -16,17 +16,23 @@ There's a demo app in this repository, but you can also check out or live demo: 
 
 ## Installation
 
-###Carthage
+The easiest way to integrate Noteacons in your project is using Carthage or CocoaPods:
 
-The easiest way to integrate Noteacons in your project is using Carthage:
+###Carthage
 
 ```objc
 github "Deveryware/noteacons-ios"
 ```
 
+###CocoaPods
+
+```objc
+pod 'NoteaconsSDK'
+```
+
 ###Download from dashboard
 
-If you don't want to use Carthage, you can download the SDK from the Dashboard and install following [this steps](http://noteacons-docs.readthedocs.io/en/latest/iOS/installation/).
+If you don't want to use Carthage or CocoaPods, you can download the SDK from the Dashboard and install following [this steps](http://noteacons-docs.readthedocs.io/en/latest/iOS/installation/).
 
 ## Integration
 
